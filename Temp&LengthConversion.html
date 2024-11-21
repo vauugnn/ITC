@@ -20,39 +20,44 @@
 <button id="clearvalues">Clear Values</button>
 </p>
 <script>
-    // Celsius to Fahrenheit conversion
-    document.getElementById("CeltoFah").addEventListener("click", function() {
-      var n1 = document.getElementById("numconv").value * 1;
-      var n2 = (n1 * 9 / 5) + 32;
-      document.getElementById("output").value = n2;
-    });
+// Celsius to Fahrenheit conversion
+document.getElementById("CeltoFah").addEventListener("click", function() {
+  var n1 = document.getElementById("numconv").value * 1;
+  var n2 = (n1 * 9 / 5) + 32;
+  document.getElementById("output").value = n2;
+  document.getElementById("converted-value").textContent = "The converted value is: " + n2.toFixed(2) + " Fahrenheit";
+});
 
-    // Fahrenheit to Celsius conversion
-    document.getElementById("FahtoCel").addEventListener("click", function() {
-      var n1 = document.getElementById("numconv").value * 1;
-      var n2 = (n1 - 32) * 5 / 9;
-      document.getElementById("output").value = n2;
-    });
+// Fahrenheit to Celsius conversion
+document.getElementById("FahtoCel").addEventListener("click", function() {
+  var n1 = document.getElementById("numconv").value * 1;
+  var n2 = (n1 - 32) * 5 / 9;
+  document.getElementById("output").value = n2;
+  document.getElementById("converted-value").textContent = "The converted value is: " + n2.toFixed(2) + " Celsius";
+});
 
-    // Meter to Feet conversion
-    document.getElementById("MetertoFeet").addEventListener("click", function() {
-      var n1 = document.getElementById("numconv").value * 1;
-      var n2 = n1 * 3.28084;
-      document.getElementById("output").value = n2;
-    });
+// Meter to Feet conversion
+document.getElementById("MetertoFeet").addEventListener("click", function() {
+  var n1 = document.getElementById("numconv").value * 1;
+  var n2 = n1 * 3.28084;
+  document.getElementById("output").value = n2;
+  document.getElementById("converted-value").textContent = "The converted value is: " + n2.toFixed(2) + " Feet";
+});
 
-    // Feet to Meter conversion
-    document.getElementById("FeettoMeter").addEventListener("click", function() {
-      var n1 = document.getElementById("numconv").value * 1;
-      var n2 = n1 / 3.28084;
-      document.getElementById("output").value = n2;
-    });
+// Feet to Meter conversion
+document.getElementById("FeettoMeter").addEventListener("click", function() {
+  var n1 = document.getElementById("numconv").value * 1;
+  var n2 = n1 / 3.28084;
+  document.getElementById("output").value = n2;
+  document.getElementById("converted-value").textContent = "The converted value is: " + n2.toFixed(2) + " Meters";
+});
 
-    // Clear values
-    document.getElementById("clearvalues").addEventListener("click", function() {
-      document.getElementById("numconv").value = '';
-      document.getElementById("output").value = '';
-    });
+// Clear values
+document.getElementById("clearvalues").addEventListener("click", function() {
+  document.getElementById("numconv").value = '';
+  document.getElementById("output").value = '';
+  document.getElementById("converted-value").textContent = '';
+});
   </script>
 </body>
 </html>
