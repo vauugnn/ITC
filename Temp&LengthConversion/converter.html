@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature and Length Conversion</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <h1>Temperature and Length Conversion</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="converter-container">
+        <div class="input-group">
+            <label for="numconv">Number to be converted:</label>
+            <input id="numconv" name="Convert" type="number">
+        </div>
+        <div class="button-group">
+            <button id="CeltoFah" class="button" aria-label="Convert from Celsius to Fahrenheit">°C -> °F</button>
+            <button id="FahtoCel" aria-label="Convert from Fahrenheit to Celsius">°F -> °C</button>
+            <button id="MetertoFeet" aria-label="Convert from Meter to Feet">m -> ft</button>
+            <button id="FeettoMeter" aria-label="Convert from Feet to Meter">ft -> m</button>
+            <button id="clearvalues" aria-label="Clear Values">Clear Values</button>
+        </div>
+        <div class="result-group">
+            <label>Converted number:</label>
+            <input id="output" name="output1" type="number" readonly>
+        </div>
+    </div>
+    <script src="converter.js"></script>
+</body>
+</html>

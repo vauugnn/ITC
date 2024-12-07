@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="factorial.css">
+</head>
+<body>
+    <h1>Factorial, Sum and Average</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="calculator-container">
+        <div>
+            <p>
+                <label for="nlimit">Input a value for n:</label>
+                <input id="nlimit" type="number">
+                <button onclick="calculateAll()">Calculate</button>
+            </p>
+            
+            <div id="results">
+                <h3>Factorial (Using While Loop):</h3>
+                <p id="factorial"></p>
+                
+                <h3>Sum (Using Do-While Loop):</h3>
+                <p id="sum"></p>
+                
+                <h3>Average (Using For Loop):</h3>
+                <p id="average"></p>
+            </div>
+        </div>    
+    </div>
+    <script src="factorial.js"></script>
+</body>
+</html>
